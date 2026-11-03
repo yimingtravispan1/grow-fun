@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "GrowFun",
+    "slug": "growfun",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.growfun.app"
+    },
+    "android": {
+      "package": "com.growfun.app"
+    }
+  }
+}

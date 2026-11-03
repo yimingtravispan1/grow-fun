@@ -1,0 +1,25 @@
+{
+  "name": "@growfun/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=../../.env --import tsx --watch src/index.ts",
+    "start": "node --env-file=../../.env --import tsx src/index.ts",
+    "eval:exercise": "node --env-file=../../.env --import tsx src/practice/run-generation-eval.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "@growfun/domain": "*",
+    "fastify": "^5.0.0",
+    "openai": "^7.27.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "~6.0.3",
+    "vitest": "^3.0.0"
+  }
+}

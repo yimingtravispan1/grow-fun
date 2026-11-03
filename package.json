@@ -1,0 +1,26 @@
+{
+  "name": "growfun",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace @growfun/api",
+    "dev:api:memory": "AI_PROVIDER=memory RAG_PROVIDER=memory SCORING_PROVIDER=memory EXERCISE_PROVIDER=memory LESSON_PROVIDER=memory LESSON_REVIEW_PROVIDER=memory npm run dev --workspace @growfun/api",
+    "start:api:memory": "AI_PROVIDER=memory RAG_PROVIDER=memory SCORING_PROVIDER=memory EXERCISE_PROVIDER=memory LESSON_PROVIDER=memory LESSON_REVIEW_PROVIDER=memory npm run start --workspace @growfun/api",
+    "dev:web": "npm run dev --workspace @growfun/web",
+    "build:web": "npm run build --workspace @growfun/web",
+    "eval:exercise:memory": "AI_PROVIDER=memory RAG_PROVIDER=memory SCORING_PROVIDER=memory EXERCISE_PROVIDER=memory npm run eval:exercise --workspace @growfun/api",
+    "dev:mobile": "npm run start --workspace @growfun/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}
